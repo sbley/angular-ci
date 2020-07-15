@@ -6,7 +6,8 @@ node_js:
 os:
   - linux
 addons:
-  chrome: stable
+  chrome: beta 
+  #stable
 env:
   global:
     - DBUS_SESSION_BUS_ADDRESS=/dev/null

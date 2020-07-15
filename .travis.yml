@@ -7,9 +7,6 @@ os:
   - linux
 addons:
   chrome: stable
-env:
-  global:
-    - DBUS_SESSION_BUS_ADDRESS=/dev/null
 services:
   - xvfb
 before_install:

@@ -13,15 +13,12 @@ env:
 services:
   - xvfb
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.22.4
-  - export PATH="$HOME/.yarn/bin:$PATH"
-before_script:
   - google-chrome-stable --version
 install:
   - yarn --frozen-lockfile
 script:
   - yarn run lint
-  - yarn run test -- --watch=false
+  - yarn run test --watch=false
   - yarn run pree2e
   - yarn run e2e
 notifications:
